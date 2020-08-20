@@ -1,5 +1,7 @@
 import copy
 
+
+#間違ったところに石を置いた(おけない)ときに次の相手のターンに移るところがなおってない
 def put_stone(x,y, who, board):
     if 1 <= x <= 8 and 1 <= y <= 8:
         if board[y-1][x-1] == 0:
@@ -553,9 +555,5 @@ def check_winner(board):
         print('プレイヤー2の勝ちです')
     else:
         print('このゲームは引き分けです')
-
-
-
-def q():
-    print('終わります')
-    return False
+        
+        
